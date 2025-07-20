@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  cassandra:
+    image: cassandra:5.0
+    container_name: cassandra
+    ports:
+      - "9042:9042"
+    environment:
+      - CASSANDRA_DATACENTER=datacenter1
+      - CASSANDRA_CLUSTER_NAME=dev-cluster
+      - CASSANDRA_AUTHENTICATOR=PasswordAuthenticator
+      - CASSANDRA_PASSWORD_SEEDER=yes
+      - CASSANDRA_USERNAME=test
+      - CASSANDRA_PASSWORD=test
+    volumes:
+      - cassandra_data:/var/lib/cassandra
+
+  ollama:
+    image: ollama/ollama
+    container_name: ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    restart: unless-stopped
+
+volumes:
+  cassandra_data:
+  ollama_data:
