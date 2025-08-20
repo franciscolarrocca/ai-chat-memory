@@ -1,21 +1,19 @@
-# AI Chat Memory POC
-
 ![banner](doc/banner.png)
 
 POC application demonstrating AI-powered chat functionality with conversation history persistence using Spring AI and Cassandra.
 
-## Features
+### Requirements
+
+- Java 24
+- Docker and Docker Compose
+
+### Features
 
 - Integration with Ollama LLM
 - Persistent chat history using Cassandra
 - API for chat interactions
 
-## Requirements
-
-- Java 24
-- Docker and Docker Compose
-
-## Getting Started
+### How to test it?
 Start Cassandra & Ollama using Docker Compose:
 
 ```bash
