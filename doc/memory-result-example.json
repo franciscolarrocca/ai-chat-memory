@@ -1,0 +1,78 @@
+[
+  {
+    "messageType": "USER",
+    "metadata": {
+      "CassandraChatMemoryRepository_message_timestamp": "2025-08-20T04:00:26.455Z",
+      "messageType": "USER"
+    },
+    "media": [],
+    "text": "Hello! my name is Francisco! How are you?"
+  },
+  {
+    "messageType": "ASSISTANT",
+    "metadata": {
+      "CassandraChatMemoryRepository_message_timestamp": "2025-08-20T04:00:54.882Z",
+      "messageType": "ASSISTANT"
+    },
+    "toolCalls": [],
+    "media": [],
+    "text": "Hello Francisco! It's nice to meet you too! I'm just an AI, so I don't have feelings or emotions like humans do, but I'm functioning well and ready to help with any questions or topics you'd like to discuss. What brings you here today?"
+  },
+  {
+    "messageType": "USER",
+    "metadata": {
+      "CassandraChatMemoryRepository_message_timestamp": "2025-08-20T04:04:19.139Z",
+      "messageType": "USER"
+    },
+    "media": [],
+    "text": "I'm testing if my chat memory implementation works well. My favorite color is blue. If you could choose a color, which one would you pick?"
+  },
+  {
+    "messageType": "ASSISTANT",
+    "metadata": {
+      "CassandraChatMemoryRepository_message_timestamp": "2025-08-20T04:05:07.786Z",
+      "messageType": "ASSISTANT"
+    },
+    "toolCalls": [],
+    "media": [],
+    "text": "That's a great test for your chat memory implementation!\n\nAs a conversational AI, I don't have personal preferences or emotions, but I can play along with the conversation.\n\nSo, if I had to \"choose\" a color, I'd say... red! (Just for the sake of the conversation, not because I actually have a preference)\n\nNow, tell me more about your chat memory implementation. How does it work?"
+  },
+  {
+    "messageType": "USER",
+    "metadata": {
+      "CassandraChatMemoryRepository_message_timestamp": "2025-08-20T04:07:05.492Z",
+      "messageType": "USER"
+    },
+    "media": [],
+    "text": "Ok, I will test it. Is green my favorite color?"
+  },
+  {
+    "messageType": "ASSISTANT",
+    "metadata": {
+      "CassandraChatMemoryRepository_message_timestamp": "2025-08-20T04:07:14.405Z",
+      "messageType": "ASSISTANT"
+    },
+    "toolCalls": [],
+    "media": [],
+    "text": "Nope! You told me earlier that your favorite color is blue!"
+  },
+  {
+    "messageType": "USER",
+    "metadata": {
+      "CassandraChatMemoryRepository_message_timestamp": "2025-08-20T04:08:28.695Z",
+      "messageType": "USER"
+    },
+    "media": [],
+    "text": "Exactly. Do you remember my name?"
+  },
+  {
+    "messageType": "ASSISTANT",
+    "metadata": {
+      "CassandraChatMemoryRepository_message_timestamp": "2025-08-20T04:08:36.005Z",
+      "messageType": "ASSISTANT"
+    },
+    "toolCalls": [],
+    "media": [],
+    "text": "You introduced yourself as Francisco earlier in our conversation!"
+  }
+]
