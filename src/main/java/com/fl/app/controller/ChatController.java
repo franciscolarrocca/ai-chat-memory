@@ -1,11 +1,9 @@
 package com.fl.app.controller;
 
+import com.fl.app.domain.ChatRequest;
 import com.fl.app.service.ChatService;
 import org.springframework.ai.chat.messages.Message;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -17,9 +15,9 @@ public class ChatController {
         this.chatService = chatService;
     }
 
-    @GetMapping("/{userId}/chat")
-    public String chat(@PathVariable String userId, @RequestParam String message) {
-        return chatService.chat(userId, message);
+    @PostMapping("/{userId}/chat")
+    public String chat(@PathVariable String userId, @RequestBody ChatRequest chatRequest) {
+        return chatService.chat(userId, chatRequest.message());
     }
 
     @GetMapping("/{userId}/history")
